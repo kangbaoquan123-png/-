@@ -19,7 +19,30 @@
 
 ## 截图
 
-> TODO: 添加游戏截图
+### 游戏场景
+
+| 客厅（早晨） | 维多利亚的房间（早晨） | 厨房（早晨） |
+|:---:|:---:|:---:|
+| ![客厅](assets/backgrounds/living_room_morning.png) | ![房间](assets/backgrounds/sister_room_morning.png) | ![厨房](assets/backgrounds/kitchen_morning.jpg) |
+
+<details>
+<summary>更多场景（点击展开）</summary>
+
+| 客厅（午后） | 客厅（夜晚） | 维多利亚的房间（午后） |
+|:---:|:---:|:---:|
+| ![客厅午后](assets/backgrounds/living_room_afternoon.png) | ![客厅夜晚](assets/backgrounds/living_room_night.png) | ![房间午后](assets/backgrounds/sister_room_afternoon.png) |
+
+</details>
+
+### 角色立绘
+
+| 日常 | 害羞 | 担忧 | 生气 |
+|:---:|:---:|:---:|:---:|
+| ![日常](assets/characters/everyday.png) | ![害羞](assets/characters/shy.png) | ![担忧](assets/characters/worry.png) | ![生气](assets/characters/dislike.png) |
+
+| 维多利亚（默认） | 害羞2 | 嫌弃 |
+|:---:|:---:|:---:|
+| ![默认](assets/characters/victoria_default.png) | ![害羞2](assets/characters/shy2.png) | ![嫌弃](assets/characters/cross.png) |
 
 ## 快速开始
 
