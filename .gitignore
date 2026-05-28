@@ -1,0 +1,28 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Build outputs
+build/
+
+# Logs
+*.log
+
+# Temporary files
+tmp_discard_anim/
+tmp_*/
+
+# OS files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Export credentials (contains keystore passwords)
+export_credentials.cfg
+
+# Build artifacts
+android_export_stdout.txt
+
+# Temp files from build tools
+*.TMP
+*~

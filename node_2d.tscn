@@ -1,0 +1,1503 @@
+[gd_scene format=3 uid="uid://bmi02ummgi8hn"]
+
+[ext_resource type="Script" uid="uid://dwx1ww1kil0uv" path="res://node_2d.gd" id="1"]
+
+[node name="主场景根" type="Node2D" unique_id=456843212]
+script = ExtResource("1")
+
+[node name="界面画布" type="CanvasLayer" parent="." unique_id=1989730625]
+
+[node name="界面根" type="Control" parent="界面画布" unique_id=1371263779]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="上遮罩" type="ColorRect" parent="界面画布/界面根" unique_id=1682249251]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 32.0
+
+[node name="背景图" type="TextureRect" parent="界面画布/界面根" unique_id=1060908120]
+layout_mode = 0
+offset_left = 279.0
+offset_top = 32.0
+offset_right = 1640.0
+offset_bottom = 798.0
+
+[node name="角色图" type="TextureRect" parent="界面画布/界面根" unique_id=892599426]
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -360.0
+offset_top = 70.0
+offset_right = 360.0
+offset_bottom = -200.0
+
+[node name="淡入淡出遮罩" type="ColorRect" parent="界面画布/界面根" unique_id=670205335]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="下遮罩" type="ColorRect" parent="界面画布/界面根" unique_id=1189358307]
+layout_mode = 0
+offset_top = 798.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="左遮罩" type="ColorRect" parent="界面画布/界面根" unique_id=1678323368]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 279.0
+offset_bottom = 798.0
+
+[node name="右遮罩" type="ColorRect" parent="界面画布/界面根" unique_id=1623974147]
+layout_mode = 0
+offset_left = 1640.0
+offset_top = 32.0
+offset_right = 1920.0
+offset_bottom = 798.0
+
+[node name="舞台上边框" type="ColorRect" parent="界面画布/界面根" unique_id=464584584]
+visible = false
+layout_mode = 0
+offset_left = 277.0
+offset_top = 30.0
+offset_right = 1642.0
+offset_bottom = 32.0
+
+[node name="舞台下边框" type="ColorRect" parent="界面画布/界面根" unique_id=340840101]
+visible = false
+layout_mode = 0
+offset_left = 277.0
+offset_top = 797.0
+offset_right = 1642.0
+offset_bottom = 799.0
+
+[node name="舞台左边框" type="ColorRect" parent="界面画布/界面根" unique_id=1929447132]
+visible = false
+layout_mode = 0
+offset_left = 277.0
+offset_top = 30.0
+offset_right = 279.0
+offset_bottom = 799.0
+
+[node name="舞台右边框" type="ColorRect" parent="界面画布/界面根" unique_id=478734939]
+visible = false
+layout_mode = 0
+offset_left = 1640.0
+offset_top = 30.0
+offset_right = 1642.0
+offset_bottom = 799.0
+
+[node name="对话上边框" type="ColorRect" parent="界面画布/界面根" unique_id=2085114266]
+visible = false
+layout_mode = 0
+offset_left = 277.0
+offset_top = 816.0
+offset_right = 1642.0
+offset_bottom = 818.0
+
+[node name="对话下边框" type="ColorRect" parent="界面画布/界面根" unique_id=1506994140]
+visible = false
+layout_mode = 0
+offset_left = 277.0
+offset_top = 1058.0
+offset_right = 1642.0
+offset_bottom = 1060.0
+
+[node name="对话左边框" type="ColorRect" parent="界面画布/界面根" unique_id=1396108188]
+visible = false
+layout_mode = 0
+offset_left = 277.0
+offset_top = 816.0
+offset_right = 279.0
+offset_bottom = 1060.0
+
+[node name="对话右边框" type="ColorRect" parent="界面画布/界面根" unique_id=1203715465]
+visible = false
+layout_mode = 0
+offset_left = 1640.0
+offset_top = 816.0
+offset_right = 1642.0
+offset_bottom = 1060.0
+
+[node name="舞台圆角遮罩" type="ColorRect" parent="界面画布/界面根" unique_id=1510481819]
+layout_mode = 0
+offset_left = 279.0
+offset_top = 32.0
+offset_right = 1640.0
+offset_bottom = 798.0
+mouse_filter = 2
+
+[node name="对话圆角遮罩" type="ColorRect" parent="界面画布/界面根" unique_id=1627042459]
+layout_mode = 0
+offset_left = 279.0
+offset_top = 818.0
+offset_right = 1640.0
+offset_bottom = 1058.0
+mouse_filter = 2
+
+[node name="舞台框" type="PanelContainer" parent="界面画布/界面根" unique_id=1117903919]
+layout_mode = 0
+offset_left = 277.0
+offset_top = 30.0
+offset_right = 1642.0
+offset_bottom = 799.0
+
+[node name="对话框" type="PanelContainer" parent="界面画布/界面根" unique_id=1003585076]
+layout_mode = 0
+offset_left = 277.0
+offset_top = 816.0
+offset_right = 1642.0
+offset_bottom = 1060.0
+
+[node name="状态面板" type="PanelContainer" parent="界面画布/界面根" unique_id=1033251185]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 58.0
+offset_right = 267.0
+offset_bottom = 478.0
+
+[node name="状态边距" type="MarginContainer" parent="界面画布/界面根/状态面板" unique_id=1457088831]
+layout_mode = 2
+
+[node name="状态盒" type="VBoxContainer" parent="界面画布/界面根/状态面板/状态边距" unique_id=683364926]
+layout_mode = 2
+
+[node name="天数标签" type="Label" parent="界面画布/界面根/状态面板/状态边距/状态盒" unique_id=235296686]
+layout_mode = 2
+
+[node name="情绪标签" type="Label" parent="界面画布/界面根/状态面板/状态边距/状态盒" unique_id=1796713118]
+layout_mode = 2
+
+[node name="状态标签" type="Label" parent="界面画布/界面根/状态面板/状态边距/状态盒" unique_id=2140223243]
+layout_mode = 2
+
+[node name="调试切换按钮" type="Button" parent="界面画布/界面根/状态面板/状态边距/状态盒" unique_id=193475801]
+layout_mode = 2
+
+[node name="好感面板" type="PanelContainer" parent="界面画布/界面根" unique_id=1362289166]
+layout_mode = 0
+offset_left = 1652.0
+offset_top = 58.0
+offset_right = 1872.0
+offset_bottom = 478.0
+
+[node name="好感边距" type="MarginContainer" parent="界面画布/界面根/好感面板" unique_id=376265221]
+layout_mode = 2
+
+[node name="好感盒" type="VBoxContainer" parent="界面画布/界面根/好感面板/好感边距" unique_id=1621168294]
+layout_mode = 2
+
+[node name="好感标题" type="Label" parent="界面画布/界面根/好感面板/好感边距/好感盒" unique_id=2025383785]
+layout_mode = 2
+
+[node name="好感数值标签" type="Label" parent="界面画布/界面根/好感面板/好感边距/好感盒" unique_id=1981905885]
+layout_mode = 2
+
+[node name="好感轨道容器" type="Control" parent="界面画布/界面根/好感面板/好感边距/好感盒" unique_id=979697447]
+layout_mode = 2
+
+[node name="好感轨道" type="ColorRect" parent="界面画布/界面根/好感面板/好感边距/好感盒/好感轨道容器" unique_id=1951823434]
+layout_mode = 0
+
+[node name="好感填充" type="ColorRect" parent="界面画布/界面根/好感面板/好感边距/好感盒/好感轨道容器" unique_id=624245934]
+layout_mode = 0
+
+[node name="好感百分比标签" type="Label" parent="界面画布/界面根/好感面板/好感边距/好感盒" unique_id=1291874066]
+layout_mode = 2
+
+[node name="对话面板" type="PanelContainer" parent="界面画布/界面根" unique_id=1193760474]
+layout_mode = 0
+offset_left = 279.0
+offset_top = 818.0
+offset_right = 1640.0
+offset_bottom = 1058.0
+
+[node name="对话覆盖层" type="Control" parent="界面画布/界面根/对话面板" unique_id=631069632]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="说话人标签" type="Label" parent="界面画布/界面根/对话面板/对话覆盖层" unique_id=1647889242]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 18.0
+offset_right = 1301.0
+offset_bottom = 60.0
+
+[node name="对话文本" type="Label" parent="界面画布/界面根/对话面板/对话覆盖层" unique_id=1401541107]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 82.0
+offset_right = 1301.0
+offset_bottom = 166.0
+
+[node name="输入提示标签" type="Label" parent="界面画布/界面根/对话面板/对话覆盖层" unique_id=579018777]
+visible = false
+layout_mode = 0
+offset_left = 60.0
+offset_top = 42.0
+offset_right = 1301.0
+offset_bottom = 76.0
+
+[node name="输入框面板" type="PanelContainer" parent="界面画布/界面根/对话面板/对话覆盖层" unique_id=843193206]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 123.0
+offset_right = 1313.0
+offset_bottom = 181.0
+
+[node name="输入框边距" type="MarginContainer" parent="界面画布/界面根/对话面板/对话覆盖层/输入框面板" unique_id=1387336335]
+layout_mode = 2
+
+[node name="输入框" type="LineEdit" parent="界面画布/界面根/对话面板/对话覆盖层/输入框面板/输入框边距" unique_id=965592785]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="舞台选项盒" type="VBoxContainer" parent="界面画布/界面根" unique_id=1231884537]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 640.0
+offset_right = 1552.0
+offset_bottom = 780.0
+
+[node name="发送按钮" type="Button" parent="界面画布/界面根" unique_id=615327045]
+layout_mode = 0
+offset_left = 1508.0
+offset_top = 941.0
+offset_right = 1628.0
+offset_bottom = 999.0
+
+[node name="房间按钮" type="Button" parent="界面画布/界面根" unique_id=800372156]
+layout_mode = 0
+offset_left = 1430.0
+offset_top = 323.0
+offset_right = 1626.0
+offset_bottom = 369.0
+
+[node name="玩游戏按钮" type="Button" parent="界面画布/界面根" unique_id=2012081145]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 984.0
+offset_right = 228.0
+offset_bottom = 1026.0
+text = "玩游戏"
+
+[node name="继续按钮" type="Button" parent="界面画布/界面根" unique_id=1918591014]
+layout_mode = 0
+offset_left = 1692.0
+offset_top = 934.0
+offset_right = 1882.0
+offset_bottom = 976.0
+
+[node name="联网切换按钮" type="Button" parent="界面画布/界面根" unique_id=2070289433]
+layout_mode = 0
+offset_left = 1410.0
+offset_top = 826.0
+offset_right = 1630.0
+offset_bottom = 860.0
+text = "联网检索：开"
+
+[node name="快捷菜单盒" type="HBoxContainer" parent="界面画布/界面根" unique_id=1499959455]
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -251.0
+offset_top = 1022.0
+offset_right = 251.0
+offset_bottom = 1051.0
+alignment = 1
+
+[node name="快捷回退" type="Button" parent="界面画布/界面根/快捷菜单盒" unique_id=212187736]
+layout_mode = 2
+
+[node name="快捷历史" type="Button" parent="界面画布/界面根/快捷菜单盒" unique_id=1631653151]
+layout_mode = 2
+
+[node name="快捷快进" type="Button" parent="界面画布/界面根/快捷菜单盒" unique_id=1872472923]
+layout_mode = 2
+
+[node name="快捷自动" type="Button" parent="界面画布/界面根/快捷菜单盒" unique_id=1516551928]
+layout_mode = 2
+
+[node name="快捷保存" type="Button" parent="界面画布/界面根/快捷菜单盒" unique_id=1680088584]
+layout_mode = 2
+
+[node name="快捷快存" type="Button" parent="界面画布/界面根/快捷菜单盒" unique_id=648950334]
+layout_mode = 2
+
+[node name="快捷快读" type="Button" parent="界面画布/界面根/快捷菜单盒" unique_id=1512303028]
+layout_mode = 2
+
+[node name="快捷设置" type="Button" parent="界面画布/界面根/快捷菜单盒" unique_id=1367633313]
+layout_mode = 2
+
+[node name="结束互动按钮" type="Button" parent="界面画布/界面根" unique_id=1533030912]
+layout_mode = 0
+offset_left = 1692.0
+offset_top = 984.0
+offset_right = 1882.0
+offset_bottom = 1026.0
+text = "结束交互"
+
+[node name="思考提示标签" type="Label" parent="界面画布/界面根" unique_id=986975445]
+layout_mode = 0
+offset_left = 279.0
+offset_top = 895.0
+offset_right = 1640.0
+offset_bottom = 931.0
+
+[node name="二十一点面板" type="PanelContainer" parent="界面画布/界面根" unique_id=1573348299]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 1
+
+[node name="二十一点规则按钮" type="Button" parent="界面画布/界面根"]
+visible = false
+layout_mode = 0
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -70.0
+offset_right = 186.0
+offset_bottom = -24.0
+text = "规则说明"
+z_index = 27
+
+[node name="二十一点规则面板" type="PanelContainer" parent="界面画布/界面根"]
+visible = false
+layout_mode = 0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -430.0
+offset_top = -246.0
+offset_right = -24.0
+offset_bottom = -24.0
+mouse_filter = 2
+z_index = 26
+
+[node name="二十一点规则文本" type="Label" parent="界面画布/界面根/二十一点规则面板"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "21点规则说明\n1. 目标接近 21，超过 21 立即爆牌判负。\n2. 2-10 按面值；J/Q/K=10；A 自动按 1 或 11 取最优。\n3. 要牌=再拿一张；停牌=结束本回合。\n4. 庄家点数小于 17 必补牌，大于等于 17 停牌。\n5. 同点为平局；两张 21 点按 1.5 倍结算。"
+horizontal_alignment = 0
+vertical_alignment = 0
+autowrap_mode = 3
+
+[node name="发牌堆区" type="PanelContainer" parent="界面画布/界面根/二十一点面板"]
+layout_mode = 0
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -224.0
+offset_right = -36.0
+offset_bottom = 224.0
+mouse_filter = 2
+
+[node name="信任条轨道" type="Panel" parent="界面画布/界面根/二十一点面板"]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -228.0
+offset_top = 20.0
+offset_right = -34.0
+offset_bottom = 42.0
+mouse_filter = 2
+clip_contents = true
+
+[node name="信任条填充" type="Panel" parent="界面画布/界面根/二十一点面板/信任条轨道"]
+layout_mode = 0
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 3.0
+offset_top = -8.0
+offset_right = -3.0
+offset_bottom = 8.0
+grow_vertical = 2
+
+[node name="发牌堆标题" type="Label" parent="界面画布/界面根/二十一点面板/发牌堆区"]
+layout_mode = 0
+anchor_right = 1.0
+offset_bottom = 34.0
+text = "发牌堆"
+horizontal_alignment = 1
+
+[node name="发牌堆卡片层" type="Control" parent="界面画布/界面根/二十一点面板/发牌堆区"]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -94.0
+offset_top = -112.0
+offset_right = 94.0
+offset_bottom = 112.0
+mouse_filter = 2
+
+[node name="发牌堆剩余" type="Label" parent="界面画布/界面根/二十一点面板/发牌堆区"]
+layout_mode = 0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -44.0
+offset_bottom = -8.0
+text = "剩余 52"
+horizontal_alignment = 1
+
+[node name="发牌粒子特效" type="GPUParticles2D" parent="界面画布/界面根/二十一点面板"]
+emitting = false
+amount = 28
+lifetime = 0.36
+one_shot = true
+explosiveness = 1.0
+local_coords = false
+position = Vector2(1600, 520)
+z_index = 30
+
+[node name="结算粒子特效" type="GPUParticles2D" parent="界面画布/界面根/二十一点面板"]
+emitting = false
+amount = 120
+lifetime = 0.65
+one_shot = true
+explosiveness = 1.0
+local_coords = false
+position = Vector2(960, 420)
+z_index = 31
+
+[node name="二十一点边距" type="MarginContainer" parent="界面画布/界面根/二十一点面板" unique_id=1844051122]
+layout_mode = 2
+theme_override_constants/margin_left = 26
+theme_override_constants/margin_top = 22
+theme_override_constants/margin_right = 26
+theme_override_constants/margin_bottom = 22
+
+[node name="二十一点列" type="VBoxContainer" parent="界面画布/界面根/二十一点面板/二十一点边距" unique_id=120922184]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="二十一点标题" type="Label" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列" unique_id=56689917]
+layout_mode = 2
+text = "21点"
+horizontal_alignment = 1
+
+[node name="二十一点状态" type="Label" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列" unique_id=2023404169]
+layout_mode = 2
+text = "点击“要牌”继续。"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="庄家标签" type="Label" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列" unique_id=1640041886]
+layout_mode = 2
+text = "庄家：0点"
+
+[node name="庄家手牌" type="Label" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列" unique_id=1132778457]
+layout_mode = 2
+text = "?"
+autowrap_mode = 3
+
+[node name="庄家卡面区" type="Control" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列" unique_id=983510721]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 236)
+
+[node name="玩家标签" type="Label" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列" unique_id=1964753103]
+layout_mode = 2
+text = "玩家：0点"
+
+[node name="玩家手牌" type="Label" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列" unique_id=137681880]
+layout_mode = 2
+text = "?"
+autowrap_mode = 3
+
+[node name="玩家卡面区" type="Control" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列" unique_id=766738824]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 236)
+
+[node name="二十一点输入面板" type="PanelContainer" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列"]
+custom_minimum_size = Vector2(0, 58)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="二十一点输入边距" type="MarginContainer" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列/二十一点输入面板"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 8
+
+[node name="二十一点输入框" type="LineEdit" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列/二十一点输入面板/二十一点输入边距"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="二十一点按钮行" type="HBoxContainer" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列" unique_id=783211578]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="要牌按钮" type="Button" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列/二十一点按钮行" unique_id=642253117]
+layout_mode = 2
+text = "要牌"
+
+[node name="停牌按钮" type="Button" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列/二十一点按钮行" unique_id=328308790]
+layout_mode = 2
+text = "停牌"
+
+[node name="新一局按钮" type="Button" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列/二十一点按钮行" unique_id=1016999193]
+layout_mode = 2
+text = "新一局"
+
+[node name="结束牌局按钮" type="Button" parent="界面画布/界面根/二十一点面板/二十一点边距/二十一点列/二十一点按钮行" unique_id=173870531]
+layout_mode = 2
+text = "结束"
+
+[node name="菜单遮罩" type="ColorRect" parent="界面画布/界面根" unique_id=1639236823]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="游戏菜单面板" type="PanelContainer" parent="界面画布/界面根" unique_id=2011653994]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="游戏菜单背景" type="TextureRect" parent="界面画布/界面根/游戏菜单面板" unique_id=1876368610]
+layout_mode = 2
+
+[node name="游戏菜单内容边距" type="MarginContainer" parent="界面画布/界面根/游戏菜单面板" unique_id=483425756]
+layout_mode = 2
+
+[node name="游戏菜单框架" type="HBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距" unique_id=1272323026]
+layout_mode = 2
+
+[node name="游戏菜单导航盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架" unique_id=477450137]
+layout_mode = 2
+
+[node name="导航历史" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单导航盒" unique_id=73773875]
+layout_mode = 2
+text = "历史"
+
+[node name="导航保存" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单导航盒" unique_id=953614128]
+layout_mode = 2
+text = "保存"
+
+[node name="导航读取" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单导航盒" unique_id=785988052]
+layout_mode = 2
+text = "读取游戏"
+
+[node name="导航设置" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单导航盒" unique_id=1993545219]
+layout_mode = 2
+text = "设置"
+
+[node name="导航关于" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单导航盒" unique_id=101941760]
+layout_mode = 2
+text = "关于"
+
+[node name="导航帮助" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单导航盒" unique_id=52529782]
+layout_mode = 2
+text = "帮助"
+
+[node name="导航占位" type="Control" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单导航盒" unique_id=1403719861]
+layout_mode = 2
+
+[node name="导航返回" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单导航盒" unique_id=933184960]
+layout_mode = 2
+text = "返回"
+
+[node name="游戏菜单内容盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架" unique_id=1138725840]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="游戏菜单标题" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒" unique_id=735794352]
+layout_mode = 2
+
+[node name="游戏菜单页面框" type="PanelContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒" unique_id=513351430]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="游戏菜单页面边距" type="MarginContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框" unique_id=1549390068]
+layout_mode = 2
+
+[node name="游戏菜单页面根" type="Control" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距" unique_id=309520467]
+layout_mode = 2
+
+[node name="历史页面" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根" unique_id=1935655905]
+visible = false
+layout_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="历史文本" type="RichTextLabel" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/历史页面" unique_id=1587866812]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="保存页面" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根" unique_id=1752083239]
+visible = false
+layout_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="保存说明标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面" unique_id=1964013567]
+layout_mode = 2
+
+[node name="保存页码标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面" unique_id=102725219]
+layout_mode = 2
+
+[node name="保存槽位网格" type="GridContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面" unique_id=1343275103]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="保存槽位1" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格" unique_id=654310864]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位1" unique_id=503633482]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位1/卡片盒" unique_id=687672605]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位1/卡片盒/缩略图底" unique_id=1849202956]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位1/卡片盒" unique_id=1079079398]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位1/卡片盒/信息盒" unique_id=1077153172]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位1/卡片盒/信息盒" unique_id=309923932]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位1/卡片盒/信息盒" unique_id=1449708725]
+layout_mode = 2
+
+[node name="保存槽位2" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格" unique_id=295571141]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位2" unique_id=898301581]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位2/卡片盒" unique_id=86927961]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位2/卡片盒/缩略图底" unique_id=81571086]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位2/卡片盒" unique_id=716557336]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位2/卡片盒/信息盒" unique_id=1949060662]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位2/卡片盒/信息盒" unique_id=771516600]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位2/卡片盒/信息盒" unique_id=897676047]
+layout_mode = 2
+
+[node name="保存槽位3" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格" unique_id=526530821]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位3" unique_id=1354609949]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位3/卡片盒" unique_id=2137516896]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位3/卡片盒/缩略图底" unique_id=2142801387]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位3/卡片盒" unique_id=191884500]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位3/卡片盒/信息盒" unique_id=923570916]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位3/卡片盒/信息盒" unique_id=174600930]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位3/卡片盒/信息盒" unique_id=723761009]
+layout_mode = 2
+
+[node name="保存槽位4" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格" unique_id=1253603153]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位4" unique_id=1847313697]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位4/卡片盒" unique_id=851387596]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位4/卡片盒/缩略图底" unique_id=957096932]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位4/卡片盒" unique_id=1300631213]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位4/卡片盒/信息盒" unique_id=1065988260]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位4/卡片盒/信息盒" unique_id=847005631]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位4/卡片盒/信息盒" unique_id=1768251521]
+layout_mode = 2
+
+[node name="保存槽位5" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格" unique_id=1458893058]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位5" unique_id=1645852326]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位5/卡片盒" unique_id=1915414897]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位5/卡片盒/缩略图底" unique_id=1004532420]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位5/卡片盒" unique_id=1862801614]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位5/卡片盒/信息盒" unique_id=1549795278]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位5/卡片盒/信息盒" unique_id=1559167663]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位5/卡片盒/信息盒" unique_id=1383097969]
+layout_mode = 2
+
+[node name="保存槽位6" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格" unique_id=892241622]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位6" unique_id=1541022123]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位6/卡片盒" unique_id=2119207968]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位6/卡片盒/缩略图底" unique_id=1707916490]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位6/卡片盒" unique_id=1838657160]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位6/卡片盒/信息盒" unique_id=895132525]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位6/卡片盒/信息盒" unique_id=1803193355]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存槽位网格/保存槽位6/卡片盒/信息盒" unique_id=383316843]
+layout_mode = 2
+
+[node name="保存分页按钮" type="GridContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面" unique_id=1491778288]
+layout_mode = 2
+
+[node name="保存页1" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存分页按钮" unique_id=2139958676]
+layout_mode = 2
+text = "1"
+
+[node name="保存页2" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存分页按钮" unique_id=1992876639]
+layout_mode = 2
+text = "2"
+
+[node name="保存页3" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存分页按钮" unique_id=749647457]
+layout_mode = 2
+text = "3"
+
+[node name="保存页4" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存分页按钮" unique_id=1153527714]
+layout_mode = 2
+text = "4"
+
+[node name="保存页5" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存分页按钮" unique_id=43285214]
+layout_mode = 2
+text = "5"
+
+[node name="保存页6" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存分页按钮" unique_id=2126624709]
+layout_mode = 2
+text = "6"
+
+[node name="保存页7" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存分页按钮" unique_id=185660158]
+layout_mode = 2
+text = "7"
+
+[node name="保存页8" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存分页按钮" unique_id=936766946]
+layout_mode = 2
+text = "8"
+
+[node name="保存页9" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存分页按钮" unique_id=1366200912]
+layout_mode = 2
+text = "9"
+
+[node name="保存页10" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存分页按钮" unique_id=1378991607]
+layout_mode = 2
+text = "10"
+
+[node name="保存操作行" type="HBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面" unique_id=1991646385]
+layout_mode = 2
+
+[node name="保存执行按钮" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/保存页面/保存操作行" unique_id=337388130]
+layout_mode = 2
+text = "保存"
+
+[node name="读取页面" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根" unique_id=231732370]
+visible = false
+layout_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="读取说明标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面" unique_id=154031960]
+layout_mode = 2
+
+[node name="读取页码标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面" unique_id=1127595874]
+layout_mode = 2
+
+[node name="读取槽位网格" type="GridContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面" unique_id=1517685644]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="读取槽位1" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格" unique_id=1917169265]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位1" unique_id=1097077458]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位1/卡片盒" unique_id=1828059394]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位1/卡片盒/缩略图底" unique_id=2137078694]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位1/卡片盒" unique_id=138585082]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位1/卡片盒/信息盒" unique_id=1340098489]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位1/卡片盒/信息盒" unique_id=2120885452]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位1/卡片盒/信息盒" unique_id=1121597053]
+layout_mode = 2
+
+[node name="读取槽位2" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格" unique_id=858244998]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位2" unique_id=113091000]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位2/卡片盒" unique_id=964768046]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位2/卡片盒/缩略图底" unique_id=375332984]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位2/卡片盒" unique_id=2001822693]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位2/卡片盒/信息盒" unique_id=73628601]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位2/卡片盒/信息盒" unique_id=1056466828]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位2/卡片盒/信息盒" unique_id=1471887084]
+layout_mode = 2
+
+[node name="读取槽位3" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格" unique_id=614842839]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位3" unique_id=1252712544]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位3/卡片盒" unique_id=2131493431]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位3/卡片盒/缩略图底" unique_id=183899885]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位3/卡片盒" unique_id=1628541379]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位3/卡片盒/信息盒" unique_id=1760301078]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位3/卡片盒/信息盒" unique_id=285958848]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位3/卡片盒/信息盒" unique_id=723037343]
+layout_mode = 2
+
+[node name="读取槽位4" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格" unique_id=347940383]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位4" unique_id=1682465942]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位4/卡片盒" unique_id=341665149]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位4/卡片盒/缩略图底" unique_id=1932741606]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位4/卡片盒" unique_id=1157039858]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位4/卡片盒/信息盒" unique_id=1952126679]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位4/卡片盒/信息盒" unique_id=482159600]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位4/卡片盒/信息盒" unique_id=227258107]
+layout_mode = 2
+
+[node name="读取槽位5" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格" unique_id=1541779854]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位5" unique_id=620580631]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位5/卡片盒" unique_id=1940597592]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位5/卡片盒/缩略图底" unique_id=353780913]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位5/卡片盒" unique_id=1999974525]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位5/卡片盒/信息盒" unique_id=403213705]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位5/卡片盒/信息盒" unique_id=728966273]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位5/卡片盒/信息盒" unique_id=1904846999]
+layout_mode = 2
+
+[node name="读取槽位6" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格" unique_id=1902473567]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="卡片盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位6" unique_id=1750644537]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="缩略图底" type="ColorRect" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位6/卡片盒" unique_id=240335841]
+custom_minimum_size = Vector2(0, 114)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="缩略图标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位6/卡片盒/缩略图底" unique_id=923263871]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SLOT"
+
+[node name="信息盒" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位6/卡片盒" unique_id=55177301]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="信息上行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位6/卡片盒/信息盒" unique_id=2132889659]
+layout_mode = 2
+
+[node name="信息中行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位6/卡片盒/信息盒" unique_id=1568177603]
+layout_mode = 2
+
+[node name="信息下行" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取槽位网格/读取槽位6/卡片盒/信息盒" unique_id=1700931653]
+layout_mode = 2
+
+[node name="读取分页按钮" type="GridContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面" unique_id=979712070]
+layout_mode = 2
+
+[node name="读取页1" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取分页按钮" unique_id=1917635119]
+layout_mode = 2
+text = "1"
+
+[node name="读取页2" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取分页按钮" unique_id=1281489733]
+layout_mode = 2
+text = "2"
+
+[node name="读取页3" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取分页按钮" unique_id=200586583]
+layout_mode = 2
+text = "3"
+
+[node name="读取页4" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取分页按钮" unique_id=228339944]
+layout_mode = 2
+text = "4"
+
+[node name="读取页5" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取分页按钮" unique_id=1530347272]
+layout_mode = 2
+text = "5"
+
+[node name="读取页6" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取分页按钮" unique_id=1482972786]
+layout_mode = 2
+text = "6"
+
+[node name="读取页7" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取分页按钮" unique_id=1667591638]
+layout_mode = 2
+text = "7"
+
+[node name="读取页8" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取分页按钮" unique_id=544015034]
+layout_mode = 2
+text = "8"
+
+[node name="读取页9" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取分页按钮" unique_id=1363603330]
+layout_mode = 2
+text = "9"
+
+[node name="读取页10" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取分页按钮" unique_id=893704588]
+layout_mode = 2
+text = "10"
+
+[node name="读取操作行" type="HBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面" unique_id=913836811]
+layout_mode = 2
+
+[node name="读取执行按钮" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/读取页面/读取操作行" unique_id=1440941293]
+layout_mode = 2
+text = "读取"
+
+[node name="设置页面" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根" unique_id=1943198985]
+visible = false
+layout_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="音乐音量标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/设置页面" unique_id=1307997529]
+layout_mode = 2
+text = "背景音乐音量"
+
+[node name="音乐音量滑条" type="HSlider" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/设置页面" unique_id=2112479944]
+layout_mode = 2
+
+[node name="音效音量标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/设置页面" unique_id=213395084]
+layout_mode = 2
+text = "音效音量"
+
+[node name="音效音量滑条" type="HSlider" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/设置页面" unique_id=12444766]
+layout_mode = 2
+
+[node name="模式说明标签" type="Label" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/设置页面" unique_id=123942898]
+layout_mode = 2
+text = "快进：加速剧情推进；自动：自动点击继续。"
+
+[node name="设置操作行" type="HBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/设置页面" unique_id=1133709857]
+layout_mode = 2
+
+[node name="显示模式按钮" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/设置页面/设置操作行" unique_id=1813352075]
+layout_mode = 2
+
+[node name="快进模式按钮" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/设置页面/设置操作行" unique_id=1585595635]
+layout_mode = 2
+
+[node name="自动模式按钮" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/设置页面/设置操作行" unique_id=295518361]
+layout_mode = 2
+
+[node name="返回主菜单按钮" type="Button" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/设置页面/设置操作行" unique_id=1891100177]
+layout_mode = 2
+text = "回到主菜单"
+
+[node name="关于页面" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根" unique_id=2047813325]
+visible = false
+layout_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="关于文本" type="RichTextLabel" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/关于页面" unique_id=1599630302]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "[b]维多利亚[/b]
+
+版本 1.0
+
+基于 Ren'Py 项目迁移到 Godot 4。
+
+该页面用于对齐原版 game_menu 的“关于”入口。"
+
+[node name="帮助页面" type="VBoxContainer" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根" unique_id=1116894347]
+visible = false
+layout_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="帮助文本" type="RichTextLabel" parent="界面画布/界面根/游戏菜单面板/游戏菜单内容边距/游戏菜单框架/游戏菜单内容盒/游戏菜单页面框/游戏菜单页面边距/游戏菜单页面根/帮助页面" unique_id=1742848652]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "操作说明：
+- Enter：发送输入
+- F2：切换联网检索
+- F8：切换调试面板
+- Esc：关闭菜单
+- 快进/自动：可在快捷菜单中切换"
+
+[node name="主菜单确认遮罩" type="ColorRect" parent="界面画布/界面根" unique_id=726310600]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.62)
+
+[node name="主菜单确认面板" type="PanelContainer" parent="界面画布/界面根/主菜单确认遮罩" unique_id=1287911511]
+visible = false
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -110.0
+offset_right = 320.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="主菜单确认边距" type="MarginContainer" parent="界面画布/界面根/主菜单确认遮罩/主菜单确认面板" unique_id=1557718829]
+layout_mode = 2
+theme_override_constants/margin_left = 22
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 22
+theme_override_constants/margin_bottom = 18
+
+[node name="主菜单确认盒" type="VBoxContainer" parent="界面画布/界面根/主菜单确认遮罩/主菜单确认面板/主菜单确认边距" unique_id=1770665182]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="主菜单确认标题" type="Label" parent="界面画布/界面根/主菜单确认遮罩/主菜单确认面板/主菜单确认边距/主菜单确认盒" unique_id=743481461]
+layout_mode = 2
+text = "回到主菜单"
+horizontal_alignment = 1
+
+[node name="主菜单确认提示" type="Label" parent="界面画布/界面根/主菜单确认遮罩/主菜单确认面板/主菜单确认边距/主菜单确认盒" unique_id=2118305530]
+layout_mode = 2
+text = "要先保存当前进度吗？"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="主菜单确认操作行" type="HBoxContainer" parent="界面画布/界面根/主菜单确认遮罩/主菜单确认面板/主菜单确认边距/主菜单确认盒" unique_id=78583352]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="确认保存返回按钮" type="Button" parent="界面画布/界面根/主菜单确认遮罩/主菜单确认面板/主菜单确认边距/主菜单确认盒/主菜单确认操作行" unique_id=1631629923]
+layout_mode = 2
+text = "保存并返回"
+
+[node name="确认不保存返回按钮" type="Button" parent="界面画布/界面根/主菜单确认遮罩/主菜单确认面板/主菜单确认边距/主菜单确认盒/主菜单确认操作行" unique_id=1429873062]
+layout_mode = 2
+text = "不保存返回"
+
+[node name="确认取消按钮" type="Button" parent="界面画布/界面根/主菜单确认遮罩/主菜单确认面板/主菜单确认边距/主菜单确认盒/主菜单确认操作行" unique_id=623120188]
+layout_mode = 2
+text = "取消"
+
+[node name="存档确认遮罩" type="ColorRect" parent="界面画布/界面根" unique_id=180066966]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.62)
+
+[node name="存档确认面板" type="PanelContainer" parent="界面画布/界面根/存档确认遮罩" unique_id=92249805]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -96.0
+offset_right = 280.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="存档确认边距" type="MarginContainer" parent="界面画布/界面根/存档确认遮罩/存档确认面板" unique_id=1072121377]
+layout_mode = 2
+theme_override_constants/margin_left = 22
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 22
+theme_override_constants/margin_bottom = 18
+
+[node name="存档确认盒" type="VBoxContainer" parent="界面画布/界面根/存档确认遮罩/存档确认面板/存档确认边距" unique_id=1170655825]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="存档确认标题" type="Label" parent="界面画布/界面根/存档确认遮罩/存档确认面板/存档确认边距/存档确认盒" unique_id=804674229]
+layout_mode = 2
+text = "确认保存"
+horizontal_alignment = 1
+
+[node name="存档确认提示" type="Label" parent="界面画布/界面根/存档确认遮罩/存档确认面板/存档确认边距/存档确认盒" unique_id=1939138448]
+layout_mode = 2
+text = "是否保存到该槽位？"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="存档确认操作行" type="HBoxContainer" parent="界面画布/界面根/存档确认遮罩/存档确认面板/存档确认边距/存档确认盒" unique_id=980392252]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="存档确认按钮" type="Button" parent="界面画布/界面根/存档确认遮罩/存档确认面板/存档确认边距/存档确认盒/存档确认操作行" unique_id=918154182]
+layout_mode = 2
+text = "确认保存"
+
+[node name="存档取消按钮" type="Button" parent="界面画布/界面根/存档确认遮罩/存档确认面板/存档确认边距/存档确认盒/存档确认操作行" unique_id=2082216364]
+layout_mode = 2
+text = "取消"
+
+[node name="房间导航遮罩" type="ColorRect" parent="界面画布/界面根" unique_id=1442617139]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="房间导航按钮" type="Button" parent="界面画布/界面根" unique_id=701831086]
+layout_mode = 0
+offset_left = 1430.0
+offset_top = 323.0
+offset_right = 1626.0
+offset_bottom = 369.0
+text = "去其他房间"
+
+[node name="叫妹妹过来按钮" type="Button" parent="界面画布/界面根"]
+layout_mode = 0
+offset_left = 1430.0
+offset_top = 379.0
+offset_right = 1626.0
+offset_bottom = 425.0
+text = "叫妹妹过来"
+
+[node name="房间导航面板" type="PanelContainer" parent="界面画布/界面根" unique_id=638083562]
+visible = false
+layout_mode = 0
+offset_left = 1430.0
+offset_top = 377.0
+offset_right = 1626.0
+offset_bottom = 605.0
+
+[node name="房间导航边距" type="MarginContainer" parent="界面画布/界面根/房间导航面板" unique_id=342369057]
+layout_mode = 2
+
+[node name="房间导航列表" type="VBoxContainer" parent="界面画布/界面根/房间导航面板/房间导航边距" unique_id=400051104]
+layout_mode = 2
+
+[node name="调试面板" type="PanelContainer" parent="界面画布/界面根" unique_id=68123818]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 150.0
+offset_right = 332.0
+offset_bottom = 1056.0
+
+[node name="调试边距" type="MarginContainer" parent="界面画布/界面根/调试面板" unique_id=2050030924]
+layout_mode = 2
+
+[node name="调试标签" type="Label" parent="界面画布/界面根/调试面板/调试边距" unique_id=5939132]
+layout_mode = 2
+
+[node name="提示面板" type="PanelContainer" parent="界面画布/界面根" unique_id=1290890002]
+visible = false
+layout_mode = 0
+offset_left = 750.0
+offset_top = 22.0
+offset_right = 1170.0
+offset_bottom = 66.0
+
+[node name="提示边距" type="MarginContainer" parent="界面画布/界面根/提示面板" unique_id=964814677]
+layout_mode = 2
+
+[node name="提示标签" type="Label" parent="界面画布/界面根/提示面板/提示边距" unique_id=909218056]
+layout_mode = 2
+
+[node name="提示计时器" type="Timer" parent="." unique_id=310916077]
+one_shot = true
+

@@ -1,0 +1,116 @@
+[gd_scene load_steps=8 format=3 uid="uid://cqteegnc2rix1"]
+
+[ext_resource type="Script" path="res://UIKit_UI_TitleScreenManager.gd" id="1_8ualt"]
+[ext_resource type="Texture2D" uid="uid://bsy2c6k1qdtt3" path="res://gfx/Rectangle 65.png" id="2_d40sx"]
+[ext_resource type="Theme" uid="uid://bevc15m0xrd7t" path="res://ui_base_theme.tres" id="3_g1rwc"]
+[ext_resource type="FontFile" uid="uid://c575mui2a8ux8" path="res://font/Roboto-Italic.ttf" id="4_huwx5"]
+[ext_resource type="Texture2D" uid="uid://cpswrptt7tqmq" path="res://gfx/aufzeichnung.png" id="5_r8ufo"]
+[ext_resource type="PackedScene" uid="uid://dfspb1vwhygpi" path="res://ui_elements/input_elements_ui.tscn" id="6_qs67y"]
+[ext_resource type="Texture2D" uid="uid://bh8v0k4muhvo7" path="res://gfx/gradientB.png" id="6_wspsd"]
+
+[node name="Control" type="Node"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI_TitleScreen" type="Node" parent="CanvasLayer"]
+script = ExtResource("1_8ualt")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UI_TitleScreen"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_d40sx")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/UI_TitleScreen"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -110.0
+offset_top = -39.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UI_TitleScreen/MarginContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Button" type="Button" parent="CanvasLayer/UI_TitleScreen/MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_g1rwc")
+theme_override_fonts/font = ExtResource("4_huwx5")
+theme_override_font_sizes/font_size = 24
+text = "Cancel"
+icon = ExtResource("5_r8ufo")
+flat = true
+alignment = 2
+expand_icon = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UI_TitleScreen"]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_right = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UI_TitleScreen/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("6_wspsd")
+expand_mode = 4
+stretch_mode = 6
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("3_g1rwc")
+theme_override_font_sizes/font_size = 30
+text = "Options"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_top = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/ScrollContainer/MarginContainer"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+
+[node name="MarginContainer11" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/ScrollContainer/MarginContainer/VBoxContainer" instance=ExtResource("6_qs67y")]
+layout_mode = 2
+
+[node name="MarginContainer10" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/ScrollContainer/MarginContainer/VBoxContainer" instance=ExtResource("6_qs67y")]
+layout_mode = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]

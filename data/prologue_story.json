@@ -1,0 +1,195 @@
+{
+  "start_label": "start",
+  "labels": {
+    "start": [
+      {
+        "type": "set",
+        "key": "love_score",
+        "operation": "set",
+        "value": 0
+      },
+      {
+        "type": "set",
+        "key": "living_days",
+        "operation": "set",
+        "value": 1
+      },
+      {
+        "type": "set",
+        "key": "current_cycle_seconds",
+        "operation": "set",
+        "value": 480
+      },
+      {
+        "type": "set",
+        "key": "time_period_name",
+        "operation": "set",
+        "value": "早上"
+      },
+      {
+        "type": "scene",
+        "background": "sister_room_morning"
+      },
+      {
+        "type": "show_character",
+        "character": "everyday"
+      },
+      {
+        "type": "jump",
+        "target": "prologue"
+      }
+    ],
+    "prologue": [
+      {
+        "type": "narration",
+        "text": "（门锁转动的声音）"
+      },
+      {
+        "type": "narration",
+        "text": "我推开公寓的门，屋子里弥漫着一股淡淡的、有些陌生的消毒水味，混合着一丝少女的幽香。"
+      },
+      {
+        "type": "narration",
+        "text": "在疗养院住了那么久的表妹，今天起就要搬来和我一起住了。"
+      },
+      {
+        "type": "say",
+        "speaker": "维多利亚",
+        "text": "哥哥……那个，好久不见。以后就要麻烦你照顾了。"
+      },
+      {
+        "type": "say",
+        "speaker": "维多利亚",
+        "text": "虽然医生说我的身体已经好得差不多了，但很多事情可能还是会反应慢一点，哥哥不会嫌弃我吧？"
+      },
+      {
+        "type": "choice",
+        "choices": [
+          {
+            "text": "“当然不会，欢迎回家。”",
+            "effects": {
+              "love_score": 5
+            },
+            "next": "prologue_welcome"
+          },
+          {
+            "text": "“只要你别添乱就行。”",
+            "effects": {
+              "love_score": 0
+            },
+            "next": "prologue_harsh"
+          }
+        ]
+      }
+    ],
+    "prologue_welcome": [
+      {
+        "type": "say",
+        "speaker": "维多利亚",
+        "text": "（她露出了一个极其标准的微笑）嗯！谢谢哥哥。"
+      },
+      {
+        "type": "set",
+        "key": "prologue_done",
+        "operation": "set",
+        "value": true
+      },
+      {
+        "type": "set",
+        "key": "daily_greeted",
+        "operation": "set",
+        "value": true
+      },
+      {
+        "type": "set",
+        "key": "period_initiative_done",
+        "operation": "set",
+        "value": true
+      },
+      {
+        "type": "jump",
+        "target": "prologue_settle_transition"
+      }
+    ],
+    "prologue_harsh": [
+      {
+        "type": "say",
+        "speaker": "维多利亚",
+        "text": "我会努力做一个乖妹妹的……计算中……不对，我是说，我会努力的。"
+      },
+      {
+        "type": "set",
+        "key": "prologue_done",
+        "operation": "set",
+        "value": true
+      },
+      {
+        "type": "set",
+        "key": "daily_greeted",
+        "operation": "set",
+        "value": true
+      },
+      {
+        "type": "set",
+        "key": "period_initiative_done",
+        "operation": "set",
+        "value": true
+      },
+      {
+        "type": "jump",
+        "target": "prologue_settle_transition"
+      }
+    ],
+    "prologue_settle_transition": [
+      {
+        "type": "set",
+        "key": "current_cycle_seconds",
+        "operation": "set",
+        "value": 1080
+      },
+      {
+        "type": "set",
+        "key": "time_period_name",
+        "operation": "set",
+        "value": "晚上"
+      },
+      {
+        "type": "scene",
+        "background": "sister_room_night"
+      },
+      {
+        "type": "set",
+        "key": "period_initiative_done",
+        "operation": "set",
+        "value": false
+      },
+      {
+        "type": "narration",
+        "text": "搬家和整理一直忙到傍晚，屋子终于安静下来。"
+      },
+      {
+        "type": "narration",
+        "text": "她把最后一个纸箱轻轻推到墙边，回头看向我。"
+      },
+      {
+        "type": "say",
+        "speaker": "维多利亚",
+        "text": "哥哥，今天辛苦了……我们先歇一会儿，再慢慢聊，好吗？"
+      },
+      {
+        "type": "narration",
+        "text": "窗外的光线一点点暗下去，节奏终于慢了下来。"
+      },
+      {
+        "type": "jump",
+        "target": "main_room"
+      }
+    ],
+    "main_room": [
+      {
+        "type": "enter_chat",
+        "silent": true
+      }
+    ]
+  }
+}

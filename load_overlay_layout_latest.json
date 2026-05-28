@@ -1,0 +1,177 @@
+[
+	{
+		"anchors": [
+			0.0,
+			0.0,
+			1.0,
+			1.0
+		],
+		"layout_mode": 1,
+		"offsets": [
+			0.0,
+			0.0,
+			0.0,
+			0.0
+		],
+		"path": "/root/VictoriaMainMenu/LoadOverlay",
+		"pos": [
+			0.0,
+			0.0
+		],
+		"size": [
+			1920.0,
+			1080.0
+		],
+		"visible": true
+	},
+	{
+		"anchors": [
+			0.0,
+			0.0,
+			1.0,
+			1.0
+		],
+		"layout_mode": 1,
+		"offsets": [
+			0.0,
+			0.0,
+			0.0,
+			0.0
+		],
+		"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI",
+		"pos": [
+			0.0,
+			0.0
+		],
+		"size": [
+			1920.0,
+			1080.0
+		],
+		"visible": true
+	},
+	{
+		"anchors": [
+			0.0,
+			0.0,
+			1.0,
+			1.0
+		],
+		"layout_mode": 1,
+		"offsets": [
+			0.0,
+			0.0,
+			0.0,
+			0.0
+		],
+		"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot",
+		"pos": [
+			0.0,
+			0.0
+		],
+		"size": [
+			1920.0,
+			1080.0
+		],
+		"visible": true
+	},
+	{
+		"anchors": [
+			0.5,
+			0.0,
+			0.5,
+			1.0
+		],
+		"layout_mode": 1,
+		"offsets": [
+			-500.0,
+			0.0,
+			500.0,
+			0.0
+		],
+		"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox",
+		"pos": [
+			460.0,
+			0.0
+		],
+		"size": [
+			1000.0,
+			1080.0
+		],
+		"visible": true
+	},
+	{
+		"anchors": [
+			0.0,
+			0.0,
+			0.0,
+			0.0
+		],
+		"layout_mode": 2,
+		"offsets": [
+			0.0,
+			0.0,
+			1000.0,
+			1080.0
+		],
+		"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin",
+		"pos": [
+			460.0,
+			0.0
+		],
+		"size": [
+			1000.0,
+			1080.0
+		],
+		"visible": true
+	},
+	{
+		"anchors": [
+			0.0,
+			0.0,
+			0.0,
+			0.0
+		],
+		"layout_mode": 2,
+		"offsets": [
+			0.0,
+			40.0,
+			1000.0,
+			1040.0
+		],
+		"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/PanelBackground",
+		"pos": [
+			460.0,
+			40.0
+		],
+		"size": [
+			1000.0,
+			1000.0
+		],
+		"visible": true
+	},
+	{
+		"anchors": [
+			0.0,
+			0.0,
+			0.0,
+			0.0
+		],
+		"layout_mode": 2,
+		"offsets": [
+			0.0,
+			40.0,
+			1000.0,
+			1040.0
+		],
+		"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox",
+		"pos": [
+			460.0,
+			40.0
+		],
+		"size": [
+			1000.0,
+			1000.0
+		],
+		"visible": true
+	}
+]

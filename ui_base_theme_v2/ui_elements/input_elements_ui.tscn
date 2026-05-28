@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dfspb1vwhygpi"]
+
+[node name="MarginContainer" type="MarginContainer"]
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Difficulty"
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OptionButton" type="OptionButton" parent="HBoxContainer"]
+layout_mode = 2
+selected = 0
+item_count = 2
+popup/item_0/text = "Easy"
+popup/item_1/text = "Hard"
+popup/item_1/id = 1
