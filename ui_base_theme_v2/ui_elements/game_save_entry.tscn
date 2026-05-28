@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8lcq16rmfb41"]
+
+[ext_resource type="Texture2D" uid="uid://bjgsvr83f643j" path="res://ui_base_theme_v2/gfx/b.webp" id="1_dr31h"]
+[ext_resource type="Theme" uid="uid://bevc15m0xrd7t" path="res://ui_base_theme_v2/ui_base_theme.tres" id="2_hpj6x"]
+
+[node name="存档条目" type="MarginContainer"]
+custom_minimum_size = Vector2(400, 100)
+offset_right = 400.0
+offset_bottom = 80.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="条目按钮" type="Button" parent="."]
+layout_mode = 2
+
+[node name="横向内容" type="HBoxContainer" parent="条目按钮"]
+layout_mode = 2
+offset_right = 378.0
+offset_bottom = 120.0
+
+[node name="缩略列" type="VBoxContainer" parent="条目按钮/横向内容"]
+clip_contents = true
+layout_mode = 2
+
+[node name="缩略图" type="TextureRect" parent="条目按钮/横向内容/缩略列"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+texture = ExtResource("1_dr31h")
+expand_mode = 4
+
+[node name="信息边距" type="MarginContainer" parent="条目按钮/横向内容"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+
+[node name="信息列" type="VBoxContainer" parent="条目按钮/横向内容/信息边距"]
+layout_mode = 2
+
+[node name="上行标签" type="Label" parent="条目按钮/横向内容/信息边距/信息列"]
+layout_mode = 2
+theme = ExtResource("2_hpj6x")
+text = "02/01/2025 22:24"
+
+[node name="下行标签" type="Label" parent="条目按钮/横向内容/信息边距/信息列"]
+layout_mode = 2
+theme = ExtResource("2_hpj6x")
+theme_override_font_sizes/font_size = 27
+text = "Highlands Waystone"

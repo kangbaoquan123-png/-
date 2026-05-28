@@ -1,0 +1,221 @@
+[gd_scene load_steps=7 format=3 uid="uid://rxeyamm6v135"]
+
+[ext_resource type="Texture2D" path="res://ui_base_theme_v2/gfx/Rectangle 65.png" id="1_bg"]
+[ext_resource type="Theme" path="res://ui_base_theme_v2/ui_base_theme.tres" id="2_theme"]
+[ext_resource type="Texture2D" path="res://ui_base_theme_v2/gfx/aufzeichnung.png" id="3_marker"]
+[ext_resource type="Texture2D" path="res://ui_base_theme_v2/gfx/gradientB.png" id="4_panel"]
+[ext_resource type="FontFile" path="res://ui_base_theme_v2/font/Roboto-Italic.ttf" id="5_font"]
+[ext_resource type="PackedScene" path="res://ui_base_theme_v2/ui_elements/game_save_entry.tscn" id="6_entry"]
+
+[node name="读档模板" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="读取界面根" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="背景图" type="TextureRect" parent="读取界面根"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_bg")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="右上区域" type="MarginContainer" parent="读取界面根"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = -220.0
+offset_top = 18.0
+offset_right = -24.0
+offset_bottom = 70.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="右上按钮列" type="VBoxContainer" parent="读取界面根/右上区域"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="顶部返回按钮" type="Button" parent="读取界面根/右上区域/右上按钮列"]
+layout_mode = 2
+theme = ExtResource("2_theme")
+theme_override_fonts/font = ExtResource("5_font")
+theme_override_font_sizes/font_size = 24
+text = "返回"
+icon = ExtResource("3_marker")
+flat = true
+alignment = 2
+expand_icon = true
+
+[node name="居中盒" type="VBoxContainer" parent="读取界面根"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -500.0
+offset_top = 0.0
+offset_right = 500.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="外边距" type="MarginContainer" parent="读取界面根/居中盒"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 40
+
+[node name="面板背景" type="TextureRect" parent="读取界面根/居中盒/外边距"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+texture = ExtResource("4_panel")
+expand_mode = 4
+stretch_mode = 6
+
+[node name="面板阴影" type="ColorRect" parent="读取界面根/居中盒/外边距"]
+z_index = 2
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.02, 0.02, 0.02, 0.42)
+
+[node name="读取盒" type="VBoxContainer" parent="读取界面根/居中盒/外边距"]
+z_index = 3
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 12
+
+[node name="读取标题" type="Label" parent="读取界面根/居中盒/外边距/读取盒"]
+layout_mode = 2
+theme = ExtResource("2_theme")
+theme_override_fonts/font = ExtResource("5_font")
+theme_override_font_sizes/font_size = 30
+text = "读取游戏"
+horizontal_alignment = 1
+
+[node name="页码行" type="HBoxContainer" parent="读取界面根/居中盒/外边距/读取盒"]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="上一页按钮" type="Button" parent="读取界面根/居中盒/外边距/读取盒/页码行"]
+custom_minimum_size = Vector2(52, 44)
+layout_mode = 2
+theme = ExtResource("2_theme")
+theme_override_fonts/font = ExtResource("5_font")
+theme_override_font_sizes/font_size = 24
+text = "<"
+
+[node name="页码标签" type="Label" parent="读取界面根/居中盒/外边距/读取盒/页码行"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_theme")
+theme_override_fonts/font = ExtResource("5_font")
+theme_override_font_sizes/font_size = 20
+text = "第 1 / 9 页"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="下一页按钮" type="Button" parent="读取界面根/居中盒/外边距/读取盒/页码行"]
+custom_minimum_size = Vector2(52, 44)
+layout_mode = 2
+theme = ExtResource("2_theme")
+theme_override_fonts/font = ExtResource("5_font")
+theme_override_font_sizes/font_size = 24
+text = ">"
+
+[node name="存档滚动区" type="ScrollContainer" parent="读取界面根/居中盒/外边距/读取盒"]
+custom_minimum_size = Vector2(0, 440)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="滚动边距" type="MarginContainer" parent="读取界面根/居中盒/外边距/读取盒/存档滚动区"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="槽位列表" type="VBoxContainer" parent="读取界面根/居中盒/外边距/读取盒/存档滚动区/滚动边距"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="槽位1条目" parent="读取界面根/居中盒/外边距/读取盒/存档滚动区/滚动边距/槽位列表" instance=ExtResource("6_entry")]
+layout_mode = 2
+
+[node name="槽位2条目" parent="读取界面根/居中盒/外边距/读取盒/存档滚动区/滚动边距/槽位列表" instance=ExtResource("6_entry")]
+layout_mode = 2
+
+[node name="槽位3条目" parent="读取界面根/居中盒/外边距/读取盒/存档滚动区/滚动边距/槽位列表" instance=ExtResource("6_entry")]
+layout_mode = 2
+
+[node name="槽位4条目" parent="读取界面根/居中盒/外边距/读取盒/存档滚动区/滚动边距/槽位列表" instance=ExtResource("6_entry")]
+layout_mode = 2
+
+[node name="槽位5条目" parent="读取界面根/居中盒/外边距/读取盒/存档滚动区/滚动边距/槽位列表" instance=ExtResource("6_entry")]
+layout_mode = 2
+
+[node name="槽位6条目" parent="读取界面根/居中盒/外边距/读取盒/存档滚动区/滚动边距/槽位列表" instance=ExtResource("6_entry")]
+layout_mode = 2
+
+[node name="说明标签" type="Label" parent="读取界面根/居中盒/外边距/读取盒"]
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+theme = ExtResource("2_theme")
+theme_override_fonts/font = ExtResource("5_font")
+theme_override_font_sizes/font_size = 20
+text = "请选择一个存档槽。"
+vertical_alignment = 1
+
+[node name="操作行" type="HBoxContainer" parent="读取界面根/居中盒/外边距/读取盒"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+alignment = 2
+theme_override_constants/separation = 14
+
+[node name="载入按钮" type="Button" parent="读取界面根/居中盒/外边距/读取盒/操作行"]
+custom_minimum_size = Vector2(220, 52)
+layout_mode = 2
+theme = ExtResource("2_theme")
+theme_override_fonts/font = ExtResource("5_font")
+theme_override_font_sizes/font_size = 26
+text = "载入"
+
+[node name="返回按钮" type="Button" parent="读取界面根/居中盒/外边距/读取盒/操作行"]
+custom_minimum_size = Vector2(220, 52)
+layout_mode = 2
+theme = ExtResource("2_theme")
+theme_override_fonts/font = ExtResource("5_font")
+theme_override_font_sizes/font_size = 26
+text = "返回"
+

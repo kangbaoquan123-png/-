@@ -1,0 +1,148 @@
+[gd_scene load_steps=7 format=3 uid="uid://bdebs7dpp81ug"]
+
+[ext_resource type="Script" path="res://UIKit_UI_TitleScreenManager.gd" id="1_kubnq"]
+[ext_resource type="Texture2D" uid="uid://bsy2c6k1qdtt3" path="res://gfx/Rectangle 65.png" id="2_8ti27"]
+[ext_resource type="FontFile" uid="uid://c575mui2a8ux8" path="res://font/Roboto-Italic.ttf" id="3_m07ws"]
+[ext_resource type="Texture2D" uid="uid://cpswrptt7tqmq" path="res://gfx/aufzeichnung.png" id="4_pggnn"]
+[ext_resource type="Theme" uid="uid://bevc15m0xrd7t" path="res://ui_base_theme.tres" id="5_oj4qt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_t7ij2"]
+line_spacing = 12.0
+font = ExtResource("3_m07ws")
+font_size = 42
+font_color = Color(1, 0.156863, 0, 1)
+shadow_size = 10
+shadow_color = Color(1, 0, 0, 0.152941)
+shadow_offset = Vector2(0, 0)
+
+[node name="Control" type="Node"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI_TitleScreen" type="Node" parent="CanvasLayer"]
+script = ExtResource("1_kubnq")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UI_TitleScreen"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_8ti27")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/UI_TitleScreen"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -110.0
+offset_top = -39.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UI_TitleScreen/MarginContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UI_TitleScreen"]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_right = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UI_TitleScreen/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Control3" type="Control" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label4" type="Label" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Game Over"
+label_settings = SubResource("LabelSettings_t7ij2")
+horizontal_alignment = 1
+
+[node name="Button3" type="Button" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.556953, 0.556953, 0.556953, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_m07ws")
+theme_override_font_sizes/font_size = 24
+icon = ExtResource("4_pggnn")
+flat = true
+expand_icon = true
+
+[node name="Label2" type="Label" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/Button3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("5_oj4qt")
+theme_override_font_sizes/font_size = 24
+text = "Countinue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button4" type="Button" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.556953, 0.556953, 0.556953, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_m07ws")
+theme_override_font_sizes/font_size = 24
+icon = ExtResource("4_pggnn")
+flat = true
+expand_icon = true
+
+[node name="Label2" type="Label" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/Button4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Quit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label2" type="Label" parent="CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Countinue from last save."
+horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]

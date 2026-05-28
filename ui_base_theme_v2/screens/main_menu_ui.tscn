@@ -1,0 +1,181 @@
+[gd_scene load_steps=5 format=3 uid="uid://dro7b7jhurfxc"]
+
+[ext_resource type="Texture2D" path="res://assets/gui/zjm.png" id="2_aomml"]
+[ext_resource type="Texture2D" uid="uid://cc7w8bl12ov4f" path="res://ui_base_theme_v2/gfx/gradientA.png" id="3_ah4ww"]
+[ext_resource type="Theme" uid="uid://bevc15m0xrd7t" path="res://ui_base_theme_v2/ui_base_theme.tres" id="5_rr6t8"]
+[ext_resource type="Texture2D" uid="uid://cpswrptt7tqmq" path="res://ui_base_theme_v2/gfx/aufzeichnung.png" id="6_pny4b"]
+
+[node name="主菜单模板根" type="Node"]
+
+[node name="标题画布" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="标题界面" type="Node" parent="标题画布"]
+
+[node name="背景图" type="TextureRect" parent="标题画布/标题界面"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_aomml")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="侧栏渐变" type="TextureRect" parent="标题画布/标题界面"]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -537.0
+offset_top = -230.0
+offset_bottom = 216.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("3_ah4ww")
+expand_mode = 4
+
+[node name="右侧布局" type="VBoxContainer" parent="标题画布/标题界面"]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -340.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="右侧边距" type="MarginContainer" parent="标题画布/标题界面/右侧布局"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="内容列" type="VBoxContainer" parent="标题画布/标题界面/右侧布局/右侧边距"]
+layout_mode = 2
+
+[node name="菜单按钮边距" type="MarginContainer" parent="标题画布/标题界面/右侧布局/右侧边距/内容列"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_top = 0
+
+[node name="菜单按钮居中器" type="CenterContainer" parent="标题画布/标题界面/右侧布局/右侧边距/内容列/菜单按钮边距"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="菜单按钮列" type="VBoxContainer" parent="标题画布/标题界面/右侧布局/右侧边距/内容列/菜单按钮边距/菜单按钮居中器"]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="继续按钮" type="Button" parent="标题画布/标题界面/右侧布局/右侧边距/内容列/菜单按钮边距/菜单按钮居中器/菜单按钮列"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("5_rr6t8")
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 0.98)
+theme_override_colors/icon_hover_color = Color(1, 0.96, 0.9, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_constants/h_separation = 16
+text = "继续"
+icon = ExtResource("6_pny4b")
+flat = true
+alignment = 0
+expand_icon = false
+
+[node name="新游戏按钮" type="Button" parent="标题画布/标题界面/右侧布局/右侧边距/内容列/菜单按钮边距/菜单按钮居中器/菜单按钮列"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("5_rr6t8")
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 0.98)
+theme_override_colors/icon_hover_color = Color(1, 0.96, 0.9, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_constants/h_separation = 16
+text = "开始游戏"
+icon = ExtResource("6_pny4b")
+flat = true
+alignment = 0
+expand_icon = false
+
+[node name="选项按钮" type="Button" parent="标题画布/标题界面/右侧布局/右侧边距/内容列/菜单按钮边距/菜单按钮居中器/菜单按钮列"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("5_rr6t8")
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 0.98)
+theme_override_colors/icon_hover_color = Color(1, 0.96, 0.9, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_constants/h_separation = 16
+text = "设置"
+icon = ExtResource("6_pny4b")
+flat = true
+alignment = 0
+expand_icon = false
+
+[node name="制作信息按钮" type="Button" parent="标题画布/标题界面/右侧布局/右侧边距/内容列/菜单按钮边距/菜单按钮居中器/菜单按钮列"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("5_rr6t8")
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 0.98)
+theme_override_colors/icon_hover_color = Color(1, 0.96, 0.9, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_constants/h_separation = 16
+text = "关于"
+icon = ExtResource("6_pny4b")
+flat = true
+alignment = 0
+expand_icon = false
+
+[node name="帮助按钮" type="Button" parent="标题画布/标题界面/右侧布局/右侧边距/内容列/菜单按钮边距/菜单按钮居中器/菜单按钮列"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("5_rr6t8")
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 0.98)
+theme_override_colors/icon_hover_color = Color(1, 0.96, 0.9, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_constants/h_separation = 16
+text = "帮助"
+icon = ExtResource("6_pny4b")
+flat = true
+alignment = 0
+expand_icon = false
+
+[node name="退出按钮" type="Button" parent="标题画布/标题界面/右侧布局/右侧边距/内容列/菜单按钮边距/菜单按钮居中器/菜单按钮列"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("5_rr6t8")
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 0.98)
+theme_override_colors/icon_hover_color = Color(1, 0.96, 0.9, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_constants/h_separation = 16
+text = "退出"
+icon = ExtResource("6_pny4b")
+flat = true
+alignment = 0
+expand_icon = false
+
+[node name="版本边距" type="MarginContainer" parent="标题画布/标题界面/右侧布局/右侧边距/内容列"]
+layout_mode = 2
+theme_override_constants/margin_top = 20
+
+[node name="版本列" type="VBoxContainer" parent="标题画布/标题界面/右侧布局/右侧边距/内容列/版本边距"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="版本标签" type="Label" parent="标题画布/标题界面/右侧布局/右侧边距/内容列/版本边距/版本列"]
+layout_mode = 2
+theme = ExtResource("5_rr6t8")
+text = "Ver. 1.6.0 / Godot"
+horizontal_alignment = 2
+
+[node name="项目标签" type="Label" parent="标题画布/标题界面/右侧布局/右侧边距/内容列/版本边距/版本列"]
+layout_mode = 2
+theme = ExtResource("5_rr6t8")
+text = "2026 Victoria Project"
+horizontal_alignment = 2
+
+[node name="界面相机" type="Camera2D" parent="."]

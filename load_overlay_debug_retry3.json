@@ -1,0 +1,1291 @@
+{
+	"nodes": {
+		"center_box": {
+			"pos": [
+				1383.0,
+				0.0
+			],
+			"size": [
+				537.0,
+				1080.0
+			],
+			"visible": true,
+			"visible_in_tree": true
+		},
+		"info_panel_bg": {
+			"pos": [
+				1140.0,
+				202.0
+			],
+			"size": [
+				758.0,
+				694.0
+			],
+			"visible": true,
+			"visible_in_tree": false
+		},
+		"legacy_load_panel_bg": {
+			"pos": [
+				860.0,
+				130.0
+			],
+			"size": [
+				1038.0,
+				858.0
+			],
+			"visible": false,
+			"visible_in_tree": false
+		},
+		"load_overlay": {
+			"pos": [
+				0.0,
+				0.0
+			],
+			"size": [
+				1920.0,
+				1080.0
+			],
+			"visible": true,
+			"visible_in_tree": true
+		},
+		"load_ui_root": {
+			"pos": [
+				0.0,
+				0.0
+			],
+			"size": [
+				1920.0,
+				1080.0
+			],
+			"visible": true,
+			"visible_in_tree": true
+		},
+		"panel_bg": {
+			"pos": [
+				1411.0,
+				104.0
+			],
+			"size": [
+				481.0,
+				884.0
+			],
+			"visible": true,
+			"visible_in_tree": true
+		},
+		"settings_panel_bg": {
+			"pos": [
+				1340.0,
+				202.0
+			],
+			"size": [
+				558.0,
+				694.0
+			],
+			"visible": true,
+			"visible_in_tree": false
+		},
+		"template_root": {
+			"pos": [
+				0.0,
+				0.0
+			],
+			"size": [
+				1920.0,
+				1080.0
+			],
+			"visible": true,
+			"visible_in_tree": true
+		}
+	},
+	"use_template_load_ui": true,
+	"visible_controls": [
+		{
+			"path": "/root/VictoriaMainMenu",
+			"pos": [
+				0.0,
+				0.0
+			],
+			"size": [
+				1920.0,
+				1080.0
+			],
+			"type": "Control"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/TextureRect",
+			"pos": [
+				0.0,
+				0.0
+			],
+			"size": [
+				1920.0,
+				1080.0
+			],
+			"type": "TextureRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/TextureRect2",
+			"pos": [
+				1383.0,
+				-230.0
+			],
+			"size": [
+				537.0,
+				1526.0
+			],
+			"type": "TextureRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer",
+			"pos": [
+				1670.0,
+				0.0
+			],
+			"size": [
+				250.0,
+				1080.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer",
+			"pos": [
+				1670.0,
+				0.0
+			],
+			"size": [
+				250.0,
+				1080.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2",
+			"pos": [
+				1670.0,
+				40.0
+			],
+			"size": [
+				210.0,
+				1000.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/AspectRatioContainer",
+			"pos": [
+				1670.0,
+				40.0
+			],
+			"size": [
+				210.0,
+				200.0
+			],
+			"type": "AspectRatioContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/AspectRatioContainer/TextureRect",
+			"pos": [
+				1670.0,
+				35.0
+			],
+			"size": [
+				210.0,
+				210.0
+			],
+			"type": "TextureRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer",
+			"pos": [
+				1670.0,
+				244.0
+			],
+			"size": [
+				210.0,
+				718.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer/VBoxContainer",
+			"pos": [
+				1670.0,
+				284.0
+			],
+			"size": [
+				210.0,
+				678.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer/VBoxContainer/ContinueButton",
+			"pos": [
+				1670.0,
+				284.0
+			],
+			"size": [
+				210.0,
+				42.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer/VBoxContainer/NewGameButton",
+			"pos": [
+				1670.0,
+				330.0
+			],
+			"size": [
+				210.0,
+				42.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer/VBoxContainer/OptionsButton",
+			"pos": [
+				1670.0,
+				376.0
+			],
+			"size": [
+				210.0,
+				42.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer/VBoxContainer/CreditsButton",
+			"pos": [
+				1670.0,
+				422.0
+			],
+			"size": [
+				210.0,
+				42.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer/VBoxContainer/HelpButton",
+			"pos": [
+				1670.0,
+				468.0
+			],
+			"size": [
+				210.0,
+				42.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer/VBoxContainer/QuitButton",
+			"pos": [
+				1670.0,
+				514.0
+			],
+			"size": [
+				210.0,
+				42.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer2",
+			"pos": [
+				1670.0,
+				966.0
+			],
+			"size": [
+				210.0,
+				74.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer2/VBoxContainer",
+			"pos": [
+				1670.0,
+				986.0
+			],
+			"size": [
+				210.0,
+				54.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer2/VBoxContainer/Label2",
+			"pos": [
+				1670.0,
+				986.0
+			],
+			"size": [
+				210.0,
+				23.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/TemplateMainMenu/CanvasLayer/UI_TitleScreen/VBoxContainer/MarginContainer/VBoxContainer2/MarginContainer2/VBoxContainer/Label4",
+			"pos": [
+				1670.0,
+				1017.0
+			],
+			"size": [
+				210.0,
+				23.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay",
+			"pos": [
+				0.0,
+				0.0
+			],
+			"size": [
+				1920.0,
+				1080.0
+			],
+			"type": "Control"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/BackdropButton",
+			"pos": [
+				0.0,
+				0.0
+			],
+			"size": [
+				1920.0,
+				1080.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI",
+			"pos": [
+				0.0,
+				0.0
+			],
+			"size": [
+				1920.0,
+				1080.0
+			],
+			"type": "Control"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot",
+			"pos": [
+				0.0,
+				0.0
+			],
+			"size": [
+				1920.0,
+				1080.0
+			],
+			"type": "Control"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/Background",
+			"pos": [
+				0.0,
+				0.0
+			],
+			"size": [
+				1920.0,
+				1080.0
+			],
+			"type": "TextureRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/TopRight",
+			"pos": [
+				1680.0,
+				32.0
+			],
+			"size": [
+				198.0,
+				56.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/TopRight/TopButtons",
+			"pos": [
+				1680.0,
+				32.0
+			],
+			"size": [
+				198.0,
+				56.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/TopRight/TopButtons/TopCloseButton",
+			"pos": [
+				1680.0,
+				32.0
+			],
+			"size": [
+				198.0,
+				40.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox",
+			"pos": [
+				1383.0,
+				0.0
+			],
+			"size": [
+				537.0,
+				1080.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin",
+			"pos": [
+				1383.0,
+				0.0
+			],
+			"size": [
+				537.0,
+				1080.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/PanelBackground",
+			"pos": [
+				1411.0,
+				104.0
+			],
+			"size": [
+				481.0,
+				884.0
+			],
+			"type": "TextureRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/PanelShade",
+			"pos": [
+				1411.0,
+				104.0
+			],
+			"size": [
+				481.0,
+				884.0
+			],
+			"type": "ColorRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox",
+			"pos": [
+				1411.0,
+				104.0
+			],
+			"size": [
+				481.0,
+				884.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadTitle",
+			"pos": [
+				1411.0,
+				104.0
+			],
+			"size": [
+				481.0,
+				39.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadPageRow",
+			"pos": [
+				1411.0,
+				155.0
+			],
+			"size": [
+				481.0,
+				44.0
+			],
+			"type": "HBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadPageRow/LoadPagePrevButton",
+			"pos": [
+				1411.0,
+				155.0
+			],
+			"size": [
+				52.0,
+				44.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadPageRow/LoadPageLabel",
+			"pos": [
+				1473.0,
+				163.0
+			],
+			"size": [
+				357.0,
+				27.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadPageRow/LoadPageNextButton",
+			"pos": [
+				1840.0,
+				155.0
+			],
+			"size": [
+				52.0,
+				44.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll",
+			"pos": [
+				1411.0,
+				211.0
+			],
+			"size": [
+				481.0,
+				663.0
+			],
+			"type": "ScrollContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin",
+			"pos": [
+				1411.0,
+				211.0
+			],
+			"size": [
+				416.0,
+				674.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots",
+			"pos": [
+				1419.0,
+				227.0
+			],
+			"size": [
+				400.0,
+				650.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot1Entry",
+			"pos": [
+				1419.0,
+				227.0
+			],
+			"size": [
+				400.0,
+				100.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot1Entry/Button",
+			"pos": [
+				1424.0,
+				232.0
+			],
+			"size": [
+				390.0,
+				90.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot1Entry/Button/HBoxContainer",
+			"pos": [
+				1424.0,
+				232.0
+			],
+			"size": [
+				473.0,
+				120.0
+			],
+			"type": "HBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot1Entry/Button/HBoxContainer/VBoxContainer",
+			"pos": [
+				1424.0,
+				232.0
+			],
+			"size": [
+				90.0,
+				120.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot1Entry/Button/HBoxContainer/VBoxContainer/TextureRect",
+			"pos": [
+				1424.0,
+				232.0
+			],
+			"size": [
+				90.0,
+				90.0
+			],
+			"type": "TextureRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot1Entry/Button/HBoxContainer/MarginContainer",
+			"pos": [
+				1518.0,
+				232.0
+			],
+			"size": [
+				379.0,
+				120.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot1Entry/Button/HBoxContainer/MarginContainer/VBoxContainer",
+			"pos": [
+				1523.0,
+				237.0
+			],
+			"size": [
+				374.0,
+				115.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot1Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label3",
+			"pos": [
+				1523.0,
+				237.0
+			],
+			"size": [
+				374.0,
+				23.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot1Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label2",
+			"pos": [
+				1523.0,
+				264.0
+			],
+			"size": [
+				374.0,
+				37.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot2Entry",
+			"pos": [
+				1419.0,
+				337.0
+			],
+			"size": [
+				400.0,
+				100.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot2Entry/Button",
+			"pos": [
+				1424.0,
+				342.0
+			],
+			"size": [
+				390.0,
+				90.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot2Entry/Button/HBoxContainer",
+			"pos": [
+				1424.0,
+				342.0
+			],
+			"size": [
+				473.0,
+				120.0
+			],
+			"type": "HBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot2Entry/Button/HBoxContainer/VBoxContainer",
+			"pos": [
+				1424.0,
+				342.0
+			],
+			"size": [
+				90.0,
+				120.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot2Entry/Button/HBoxContainer/VBoxContainer/TextureRect",
+			"pos": [
+				1424.0,
+				342.0
+			],
+			"size": [
+				90.0,
+				90.0
+			],
+			"type": "TextureRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot2Entry/Button/HBoxContainer/MarginContainer",
+			"pos": [
+				1518.0,
+				342.0
+			],
+			"size": [
+				379.0,
+				120.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot2Entry/Button/HBoxContainer/MarginContainer/VBoxContainer",
+			"pos": [
+				1523.0,
+				347.0
+			],
+			"size": [
+				374.0,
+				115.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot2Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label3",
+			"pos": [
+				1523.0,
+				347.0
+			],
+			"size": [
+				374.0,
+				23.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot2Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label2",
+			"pos": [
+				1523.0,
+				374.0
+			],
+			"size": [
+				374.0,
+				37.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot3Entry",
+			"pos": [
+				1419.0,
+				447.0
+			],
+			"size": [
+				400.0,
+				100.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot3Entry/Button",
+			"pos": [
+				1424.0,
+				452.0
+			],
+			"size": [
+				390.0,
+				90.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot3Entry/Button/HBoxContainer",
+			"pos": [
+				1424.0,
+				452.0
+			],
+			"size": [
+				473.0,
+				120.0
+			],
+			"type": "HBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot3Entry/Button/HBoxContainer/VBoxContainer",
+			"pos": [
+				1424.0,
+				452.0
+			],
+			"size": [
+				90.0,
+				120.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot3Entry/Button/HBoxContainer/VBoxContainer/TextureRect",
+			"pos": [
+				1424.0,
+				452.0
+			],
+			"size": [
+				90.0,
+				90.0
+			],
+			"type": "TextureRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot3Entry/Button/HBoxContainer/MarginContainer",
+			"pos": [
+				1518.0,
+				452.0
+			],
+			"size": [
+				379.0,
+				120.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot3Entry/Button/HBoxContainer/MarginContainer/VBoxContainer",
+			"pos": [
+				1523.0,
+				457.0
+			],
+			"size": [
+				374.0,
+				115.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot3Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label3",
+			"pos": [
+				1523.0,
+				457.0
+			],
+			"size": [
+				374.0,
+				23.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot3Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label2",
+			"pos": [
+				1523.0,
+				484.0
+			],
+			"size": [
+				374.0,
+				37.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot4Entry",
+			"pos": [
+				1419.0,
+				557.0
+			],
+			"size": [
+				400.0,
+				100.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot4Entry/Button",
+			"pos": [
+				1424.0,
+				562.0
+			],
+			"size": [
+				390.0,
+				90.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot4Entry/Button/HBoxContainer",
+			"pos": [
+				1424.0,
+				562.0
+			],
+			"size": [
+				378.0,
+				120.0
+			],
+			"type": "HBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot4Entry/Button/HBoxContainer/VBoxContainer",
+			"pos": [
+				1424.0,
+				562.0
+			],
+			"size": [
+				90.0,
+				120.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot4Entry/Button/HBoxContainer/VBoxContainer/TextureRect",
+			"pos": [
+				1424.0,
+				562.0
+			],
+			"size": [
+				90.0,
+				90.0
+			],
+			"type": "TextureRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot4Entry/Button/HBoxContainer/MarginContainer",
+			"pos": [
+				1518.0,
+				562.0
+			],
+			"size": [
+				86.0,
+				120.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot4Entry/Button/HBoxContainer/MarginContainer/VBoxContainer",
+			"pos": [
+				1523.0,
+				567.0
+			],
+			"size": [
+				81.0,
+				115.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot4Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label3",
+			"pos": [
+				1523.0,
+				567.0
+			],
+			"size": [
+				81.0,
+				23.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot4Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label2",
+			"pos": [
+				1523.0,
+				594.0
+			],
+			"size": [
+				81.0,
+				37.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot5Entry",
+			"pos": [
+				1419.0,
+				667.0
+			],
+			"size": [
+				400.0,
+				100.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot5Entry/Button",
+			"pos": [
+				1424.0,
+				672.0
+			],
+			"size": [
+				390.0,
+				90.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot5Entry/Button/HBoxContainer",
+			"pos": [
+				1424.0,
+				672.0
+			],
+			"size": [
+				378.0,
+				120.0
+			],
+			"type": "HBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot5Entry/Button/HBoxContainer/VBoxContainer",
+			"pos": [
+				1424.0,
+				672.0
+			],
+			"size": [
+				90.0,
+				120.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot5Entry/Button/HBoxContainer/VBoxContainer/TextureRect",
+			"pos": [
+				1424.0,
+				672.0
+			],
+			"size": [
+				90.0,
+				90.0
+			],
+			"type": "TextureRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot5Entry/Button/HBoxContainer/MarginContainer",
+			"pos": [
+				1518.0,
+				672.0
+			],
+			"size": [
+				86.0,
+				120.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot5Entry/Button/HBoxContainer/MarginContainer/VBoxContainer",
+			"pos": [
+				1523.0,
+				677.0
+			],
+			"size": [
+				81.0,
+				115.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot5Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label3",
+			"pos": [
+				1523.0,
+				677.0
+			],
+			"size": [
+				81.0,
+				23.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot5Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label2",
+			"pos": [
+				1523.0,
+				704.0
+			],
+			"size": [
+				81.0,
+				37.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot6Entry",
+			"pos": [
+				1419.0,
+				777.0
+			],
+			"size": [
+				400.0,
+				100.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot6Entry/Button",
+			"pos": [
+				1424.0,
+				782.0
+			],
+			"size": [
+				390.0,
+				90.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot6Entry/Button/HBoxContainer",
+			"pos": [
+				1424.0,
+				782.0
+			],
+			"size": [
+				378.0,
+				120.0
+			],
+			"type": "HBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot6Entry/Button/HBoxContainer/VBoxContainer",
+			"pos": [
+				1424.0,
+				782.0
+			],
+			"size": [
+				90.0,
+				120.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot6Entry/Button/HBoxContainer/VBoxContainer/TextureRect",
+			"pos": [
+				1424.0,
+				782.0
+			],
+			"size": [
+				90.0,
+				90.0
+			],
+			"type": "TextureRect"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot6Entry/Button/HBoxContainer/MarginContainer",
+			"pos": [
+				1518.0,
+				782.0
+			],
+			"size": [
+				86.0,
+				120.0
+			],
+			"type": "MarginContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot6Entry/Button/HBoxContainer/MarginContainer/VBoxContainer",
+			"pos": [
+				1523.0,
+				787.0
+			],
+			"size": [
+				81.0,
+				115.0
+			],
+			"type": "VBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot6Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label3",
+			"pos": [
+				1523.0,
+				787.0
+			],
+			"size": [
+				81.0,
+				23.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadScroll/LoadScrollMargin/LoadSlots/LoadSlot6Entry/Button/HBoxContainer/MarginContainer/VBoxContainer/Label2",
+			"pos": [
+				1523.0,
+				814.0
+			],
+			"size": [
+				81.0,
+				37.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadInfoLabel",
+			"pos": [
+				1411.0,
+				886.0
+			],
+			"size": [
+				481.0,
+				34.0
+			],
+			"type": "Label"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadActions",
+			"pos": [
+				1411.0,
+				932.0
+			],
+			"size": [
+				481.0,
+				56.0
+			],
+			"type": "HBoxContainer"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadActions/LoadEnterButton",
+			"pos": [
+				1438.0,
+				932.0
+			],
+			"size": [
+				220.0,
+				56.0
+			],
+			"type": "Button"
+		},
+		{
+			"path": "/root/VictoriaMainMenu/LoadOverlay/TemplateLoadUI/LoadUIRoot/CenterBox/OuterMargin/LoadBox/LoadActions/LoadCloseButton",
+			"pos": [
+				1672.0,
+				932.0
+			],
+			"size": [
+				220.0,
+				56.0
+			],
+			"type": "Button"
+		}
+	]
+}

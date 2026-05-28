@@ -1,0 +1,694 @@
+[gd_scene format=3 uid="uid://ie1ixdbuen1y"]
+
+[ext_resource type="Script" uid="uid://desjxjgjjwg62" path="res://scripts/game/victoria_main_menu.gd" id="1_menu"]
+[ext_resource type="Texture2D" uid="uid://dl1o7mvc48unh" path="res://assets/gui/zjm.png" id="2_bg"]
+[ext_resource type="FontFile" uid="uid://bcnvr5yqm2vm" path="res://assets/fonts/SourceHanSansLite.ttf" id="3_font"]
+[ext_resource type="Theme" uid="uid://bevc15m0xrd7t" path="res://ui_base_theme_v2/ui_base_theme.tres" id="4_theme"]
+[ext_resource type="PackedScene" uid="uid://dro7b7jhurfxc" path="res://ui_base_theme_v2/screens/main_menu_ui.tscn" id="5_template"]
+[ext_resource type="PackedScene" path="res://ui_base_theme_v2/screens/load_save_ui.tscn" id="6_load_template"]
+
+[node name="维多利亚主菜单" type="Control" unique_id=669578541]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_menu")
+
+[node name="模板主菜单" parent="." unique_id=1792320855 instance=ExtResource("5_template")]
+
+[node name="模板菜单点击层" type="Control" parent="." unique_id=642525435]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="覆盖画布" type="CanvasLayer" parent="." unique_id=490806266]
+
+[node name="背景图" type="TextureRect" parent="." unique_id=2052307781]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="背景遮罩" type="ColorRect" parent="." unique_id=701537725]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.2)
+
+[node name="菜单面板" type="Control" parent="." unique_id=1392927315]
+visible = false
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -620.0
+offset_top = 54.0
+offset_right = -24.0
+offset_bottom = -54.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="菜单渐变" type="ColorRect" parent="菜单面板" unique_id=2011784222]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.12, 0.1, 0.14, 0.78)
+
+[node name="菜单阴影" type="ColorRect" parent="菜单面板" unique_id=719014745]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.02, 0.02, 0.02, 0.54)
+
+[node name="菜单左边线" type="ColorRect" parent="菜单面板" unique_id=1965381401]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 2.0
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0.18)
+
+[node name="菜单标题" type="Label" parent="." unique_id=937076415]
+visible = false
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -520.0
+offset_top = 128.0
+offset_right = -90.0
+offset_bottom = -820.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.94, 0.9, 0.83, 0.96)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 34
+text = "Victoria"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="导航根" type="MarginContainer" parent="." unique_id=1377319259]
+visible = false
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -520.0
+offset_right = -80.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_top = 354
+theme_override_constants/margin_bottom = 180
+
+[node name="导航盒" type="VBoxContainer" parent="导航根" unique_id=854454492]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 14
+
+[node name="开始按钮" type="Button" parent="导航根/导航盒" unique_id=522938179]
+custom_minimum_size = Vector2(0, 62)
+layout_mode = 2
+theme = ExtResource("4_theme")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.9, 0.82, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.88, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 33
+text = "开始游戏"
+flat = true
+alignment = 2
+
+[node name="读取按钮" type="Button" parent="导航根/导航盒" unique_id=1726495914]
+custom_minimum_size = Vector2(0, 62)
+layout_mode = 2
+theme = ExtResource("4_theme")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.9, 0.82, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.88, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 33
+text = "读取游戏"
+flat = true
+alignment = 2
+
+[node name="设置按钮" type="Button" parent="导航根/导航盒" unique_id=999678577]
+custom_minimum_size = Vector2(0, 62)
+layout_mode = 2
+theme = ExtResource("4_theme")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.9, 0.82, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.88, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 33
+text = "设置"
+flat = true
+alignment = 2
+
+[node name="关于按钮" type="Button" parent="导航根/导航盒" unique_id=56907779]
+custom_minimum_size = Vector2(0, 62)
+layout_mode = 2
+theme = ExtResource("4_theme")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.9, 0.82, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.88, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 33
+text = "关于"
+flat = true
+alignment = 2
+
+[node name="帮助按钮" type="Button" parent="导航根/导航盒" unique_id=469034810]
+custom_minimum_size = Vector2(0, 62)
+layout_mode = 2
+theme = ExtResource("4_theme")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.9, 0.82, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.88, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 33
+text = "帮助"
+flat = true
+alignment = 2
+
+[node name="退出按钮" type="Button" parent="导航根/导航盒" unique_id=181705577]
+custom_minimum_size = Vector2(0, 62)
+layout_mode = 2
+theme = ExtResource("4_theme")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.9, 0.82, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.88, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 33
+text = "退出"
+flat = true
+alignment = 2
+
+[node name="游戏名" type="Label" parent="." unique_id=1581888411]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -520.0
+offset_top = -112.0
+offset_right = -86.0
+offset_bottom = -72.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 0.86)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 22
+text = "维多利亚"
+horizontal_alignment = 1
+
+[node name="设置界面" type="Control" parent="." unique_id=2055420653]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="背景按钮" type="Button" parent="设置界面" unique_id=1609001884]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+flat = true
+
+[node name="设置面板背景" type="ColorRect" parent="设置界面" unique_id=956993579]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -580.0
+offset_top = 202.0
+offset_right = -22.0
+offset_bottom = -184.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 2
+color = Color(0.01, 0.01, 0.01, 0.86)
+
+[node name="设置根" type="MarginContainer" parent="设置界面" unique_id=503690785]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -560.0
+offset_right = -40.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_top = 220
+theme_override_constants/margin_bottom = 220
+
+[node name="设置盒" type="VBoxContainer" parent="设置界面/设置根" unique_id=9042831]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 18
+
+[node name="设置标题" type="Label" parent="设置界面/设置根/设置盒" unique_id=1636710092]
+custom_minimum_size = Vector2(0, 58)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 34
+text = "设置"
+vertical_alignment = 1
+
+[node name="音乐行" type="HBoxContainer" parent="设置界面/设置根/设置盒" unique_id=2011008593]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="音乐标签" type="Label" parent="设置界面/设置根/设置盒/音乐行" unique_id=1718448564]
+custom_minimum_size = Vector2(116, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.96, 0.96, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 22
+text = "音乐音量"
+vertical_alignment = 1
+
+[node name="音乐滑条" type="HSlider" parent="设置界面/设置根/设置盒/音乐行" unique_id=1441732339]
+layout_mode = 2
+size_flags_horizontal = 3
+value = 82.0
+
+[node name="音乐数值" type="Label" parent="设置界面/设置根/设置盒/音乐行" unique_id=1319324891]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.96, 0.96, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 20
+text = "82%"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="音效行" type="HBoxContainer" parent="设置界面/设置根/设置盒" unique_id=1430311468]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="音效标签" type="Label" parent="设置界面/设置根/设置盒/音效行" unique_id=398232359]
+custom_minimum_size = Vector2(116, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.96, 0.96, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 22
+text = "音效音量"
+vertical_alignment = 1
+
+[node name="音效滑条" type="HSlider" parent="设置界面/设置根/设置盒/音效行" unique_id=1141709387]
+layout_mode = 2
+size_flags_horizontal = 3
+value = 100.0
+
+[node name="音效数值" type="Label" parent="设置界面/设置根/设置盒/音效行" unique_id=325933355]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.96, 0.96, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 20
+text = "100%"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="显示模式按钮" type="Button" parent="设置界面/设置根/设置盒" unique_id=91079337]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.93, 0.93, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.93, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 28
+text = "显示：全屏"
+flat = true
+alignment = 0
+
+[node name="重填API按钮" type="Button" parent="设置界面/设置根/设置盒" unique_id=1489327034]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.93, 0.93, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.93, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 28
+text = "重新填写 API"
+flat = true
+alignment = 0
+
+[node name="设置返回按钮" type="Button" parent="设置界面/设置根/设置盒" unique_id=401635830]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.93, 0.93, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.93, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 28
+text = "返回"
+flat = true
+alignment = 0
+
+[node name="信息界面" type="Control" parent="." unique_id=696742011]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="背景按钮" type="Button" parent="信息界面" unique_id=2122457430]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+flat = true
+
+[node name="信息面板背景" type="ColorRect" parent="信息界面" unique_id=1251981884]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -780.0
+offset_top = 202.0
+offset_right = -22.0
+offset_bottom = -184.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 2
+color = Color(0.01, 0.01, 0.01, 0.86)
+
+[node name="信息根" type="MarginContainer" parent="信息界面" unique_id=1692481889]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -760.0
+offset_right = -40.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_top = 220
+theme_override_constants/margin_bottom = 220
+
+[node name="信息盒" type="VBoxContainer" parent="信息界面/信息根" unique_id=1308039292]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 18
+
+[node name="信息标题" type="Label" parent="信息界面/信息根/信息盒" unique_id=183091057]
+custom_minimum_size = Vector2(0, 58)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 34
+text = "说明"
+vertical_alignment = 1
+
+[node name="信息正文" type="RichTextLabel" parent="信息界面/信息根/信息盒" unique_id=614979738]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("3_font")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = " "
+
+[node name="信息操作行" type="HBoxContainer" parent="信息界面/信息根/信息盒" unique_id=664775940]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_constants/separation = 14
+alignment = 2
+
+[node name="信息主按钮" type="Button" parent="信息界面/信息根/信息盒/信息操作行" unique_id=544694609]
+visible = false
+custom_minimum_size = Vector2(220, 52)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.93, 0.93, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.93, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 28
+text = "确定"
+flat = true
+
+[node name="信息返回按钮" type="Button" parent="信息界面/信息根/信息盒/信息操作行" unique_id=1410834739]
+custom_minimum_size = Vector2(220, 52)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.93, 0.93, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.93, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 28
+text = "返回"
+flat = true
+
+[node name="读取界面" type="Control" parent="." unique_id=711523755]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="背景按钮" type="Button" parent="读取界面" unique_id=1790820259]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+flat = true
+
+[node name="模板读取界面" parent="读取界面" unique_id=1812320349 instance=ExtResource("6_load_template")]
+layout_mode = 1
+
+[node name="读取面板背景" type="ColorRect" parent="读取界面" unique_id=256343113]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 190.0
+offset_top = 86.0
+offset_right = -190.0
+offset_bottom = -86.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.01, 0.01, 0.01, 0.88)
+
+[node name="读取根" type="MarginContainer" parent="读取界面" unique_id=1941411208]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 220.0
+offset_top = 110.0
+offset_right = -220.0
+offset_bottom = -110.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="读取盒" type="VBoxContainer" parent="读取界面/读取根" unique_id=978695495]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="读取标题" type="Label" parent="读取界面/读取根/读取盒" unique_id=459086765]
+custom_minimum_size = Vector2(0, 58)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 34
+text = "读取游戏"
+vertical_alignment = 1
+
+[node name="读取页码行" type="HBoxContainer" parent="读取界面/读取根/读取盒" unique_id=1686060137]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="读取上一页按钮" type="Button" parent="读取界面/读取根/读取盒/读取页码行" unique_id=1943695753]
+custom_minimum_size = Vector2(52, 44)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.93, 0.93, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.93, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 26
+text = "<"
+
+[node name="读取页码标签" type="Label" parent="读取界面/读取根/读取盒/读取页码行" unique_id=1736925729]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.92, 0.92, 0.92, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 22
+text = "第 1 / 9 页"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="读取下一页按钮" type="Button" parent="读取界面/读取根/读取盒/读取页码行" unique_id=405739338]
+custom_minimum_size = Vector2(52, 44)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.93, 0.93, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.93, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 26
+text = ">"
+
+[node name="读取网格" type="GridContainer" parent="读取界面/读取根/读取盒" unique_id=1140724438]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 3
+
+[node name="读取槽位1" type="Button" parent="读取界面/读取根/读取盒/读取网格" unique_id=506754414]
+custom_minimum_size = Vector2(0, 166)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 20
+text = "SLOT 1"
+autowrap_mode = 3
+
+[node name="读取槽位2" type="Button" parent="读取界面/读取根/读取盒/读取网格" unique_id=2060004817]
+custom_minimum_size = Vector2(0, 166)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 20
+text = "SLOT 2"
+autowrap_mode = 3
+
+[node name="读取槽位3" type="Button" parent="读取界面/读取根/读取盒/读取网格" unique_id=912267049]
+custom_minimum_size = Vector2(0, 166)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 20
+text = "SLOT 3"
+autowrap_mode = 3
+
+[node name="读取槽位4" type="Button" parent="读取界面/读取根/读取盒/读取网格" unique_id=447070059]
+custom_minimum_size = Vector2(0, 166)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 20
+text = "SLOT 4"
+autowrap_mode = 3
+
+[node name="读取槽位5" type="Button" parent="读取界面/读取根/读取盒/读取网格" unique_id=1891332342]
+custom_minimum_size = Vector2(0, 166)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 20
+text = "SLOT 5"
+autowrap_mode = 3
+
+[node name="读取槽位6" type="Button" parent="读取界面/读取根/读取盒/读取网格" unique_id=418811869]
+custom_minimum_size = Vector2(0, 166)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 20
+text = "SLOT 6"
+autowrap_mode = 3
+
+[node name="读取说明标签" type="Label" parent="读取界面/读取根/读取盒" unique_id=765549340]
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 20
+text = "请选择一个存档槽。"
+vertical_alignment = 1
+
+[node name="读取操作行" type="HBoxContainer" parent="读取界面/读取根/读取盒" unique_id=2578438]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_constants/separation = 14
+alignment = 2
+
+[node name="载入按钮" type="Button" parent="读取界面/读取根/读取盒/读取操作行" unique_id=706767423]
+custom_minimum_size = Vector2(220, 52)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.93, 0.93, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.93, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 28
+text = "载入"
+
+[node name="读取返回按钮" type="Button" parent="读取界面/读取根/读取盒/读取操作行" unique_id=1747153934]
+custom_minimum_size = Vector2(220, 52)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.93, 0.93, 1)
+theme_override_colors/font_hover_color = Color(1, 0.93, 0.93, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 28
+text = "返回"
